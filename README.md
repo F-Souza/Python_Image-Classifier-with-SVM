@@ -2,7 +2,7 @@
 
 __IMPORTANTE__
 
-__O Código que estiver entre "{}" chaves, é o código a se usar para testar com imagens diferentes das usadas para treinar.__
+__Os Códigos que estiverem entre "{}" chaves podem ser usados para testar imagens diferentes das usadas no treino do modelo.__
 
 __A principio, você pode ignorá-los.__
 
