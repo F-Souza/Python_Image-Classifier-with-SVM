@@ -1,6 +1,6 @@
 # Simple-Image-Classifier-with-SVM
 
-__IMPORTANTE!__
+__IMPORTANTE__
 __O Código que estiver entre "{}" chaves, é o código a se usar para testar com imagens diferentes das usadas para treinar.__
 __A principio, você pode ignorá-los.__
 
