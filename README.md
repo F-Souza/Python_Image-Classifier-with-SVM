@@ -18,7 +18,9 @@ __A principio, você pode ignorá-los.__
 
       Y = []
 
-- A lista será preenchidas com valores de 0 a 6 que indicarão o que represetam.
+- A lista será preenchidas com valores de 0 a 1 que indicarão o que represetam. 
+- A quantidade de itens que você quer usar no seu classificador é você quem define, nesse por ser um pequeno
+ exemplo só usarei 2; Maçãs e Bananas.
 - 0 == Maçã
 - 1 == Banana
 - No caso do exemplo serão usadas 24 imagens.
@@ -43,6 +45,7 @@ __A principio, você pode ignorá-los.__
       imagens = []
 
 - Preenchendo a lista com as imagens, seguindo a ordem de seleção estabelecido ao preencher Y.
+- Seguir a ordem é extremamente importante, perceba que no Y eu coloquei para que ele preenchesse as 12 primeiras posições com 0, ou seja, indiquei que essas 12 posições serão indicadores de maçãs. Sendo assim, na hora de carregar as imagens as 12 primeiras precisam obrigatoriamente ser de maçãs.
 
       for i in range(1,25):
 
