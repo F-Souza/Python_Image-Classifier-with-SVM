@@ -14,7 +14,7 @@ __A principio, você pode ignorá-los.__
 
       from sklearn.svm import SVC
 
-- Criando uma lista de identificacao para as imagens
+- Criando uma lista de identificação para as imagens
 
       Y = []
 
