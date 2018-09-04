@@ -30,33 +30,33 @@ __A principio, você pode ignorá-los.__
 
       for h in range(1,176):
 
-      if (h <= 25):
+            if (h <= 25):
 
-        Y.append(0)
+              Y.append(0)
 
-      elif (h > 25 and h <= 50):
+            elif (h > 25 and h <= 50):
 
-        Y.append(1)
+              Y.append(1)
 
-      elif h > 50 and h <= 75:
+            elif h > 50 and h <= 75:
 
-        Y.append(2)
+              Y.append(2)
 
-      elif h > 75 and h <= 100:
+            elif h > 75 and h <= 100:
 
-        Y.append(3)
+              Y.append(3)
 
-      elif h > 100 and h <= 125:
+            elif h > 100 and h <= 125:
 
-        Y.append(4)
+              Y.append(4)
 
-      elif h > 125 and h <= 150:
+            elif h > 125 and h <= 150:
 
-        Y.append(5)
+              Y.append(5)
 
-      elif h > 150 and h <= 175:
+            elif h > 150 and h <= 175:
 
-        Y.append(6)
+              Y.append(6)
 
 - Tranformando a lista em array.
 
