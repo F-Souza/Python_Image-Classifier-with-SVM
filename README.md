@@ -19,44 +19,20 @@ __A principio, você pode ignorá-los.__
       Y = []
 
 - A lista será preenchidas com valores de 0 a 6 que indicarão o que represetam.
-- 0 == Right
-- 1 == Left
-- 2 == Close
-- 3 == Front
-- 4 == If
-- 5 == Loop
-- 6 == Back
-- No caso do exemplo serão usadas 175 imagens.
+- 0 == Maçã
+- 1 == Banana
+- No caso do exemplo serão usadas 24 imagens.
 
-      for h in range(1,176):
+      for h in range(1,25):
 
-            if (h <= 25):
+            if (h <= 12):
 
               Y.append(0)
 
-            elif (h > 25 and h <= 50):
+            else:
 
               Y.append(1)
 
-            elif h > 50 and h <= 75:
-
-              Y.append(2)
-
-            elif h > 75 and h <= 100:
-
-              Y.append(3)
-
-            elif h > 100 and h <= 125:
-
-              Y.append(4)
-
-            elif h > 125 and h <= 150:
-
-              Y.append(5)
-
-            elif h > 150 and h <= 175:
-
-              Y.append(6)
 
 - Tranformando a lista em array.
 
@@ -68,9 +44,9 @@ __A principio, você pode ignorá-los.__
 
 - Preenchendo a lista com as imagens, seguindo a ordem de seleção estabelecido ao preencher Y.
 
-      for i in range(1,176):
+      for i in range(1,25):
 
-        imagens.append(cv2.imread('data ('+str(i)+').jpg'))
+        imagens.append(cv2.imread('data_'+str(i)+'.png'))
 
 - Tranformando a lista em array.
 
@@ -108,7 +84,7 @@ __A principio, você pode ignorá-los.__
 
       from sklearn.model_selection import train_test_split
 
-      X_train, X_test, Y_train, Y_test = train_test_split(data_images,Y, test_size = 0.40, random_state = 0)
+      X_train, X_test, Y_train, Y_test = train_test_split(data_images,Y, test_size = 0.20, random_state = 0)
 
 - Escalonando os valores.
 
