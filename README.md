@@ -23,7 +23,7 @@ __A principio, você pode ignorá-los.__
  exemplo só usarei 2; Maçãs e Bananas.
 - 0 == Maçã
 - 1 == Banana
-- No caso do exemplo serão usadas 24 imagens.
+- No caso do exemplo serão usadas 24 imagens, 12 de Maçãs e 12 de Bananas.
 
       for h in range(1,25):
 
@@ -69,9 +69,8 @@ __A principio, você pode ignorá-los.__
 
       imgs = []
 
-- Nesse caso testaremos apenas com 3 imagens.
 
-      for j in range(0,3):
+      for j in range(0, quantidade de imagens a serem analasidas):
 
         imgs.append(cv2.imread('teste_'+str(j)+'.jpg'))
 
