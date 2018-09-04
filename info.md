@@ -84,7 +84,7 @@ __A principio, você pode ignorá-los.__
 
       data_images = X.reshape((n_samples, -1))
 
-{
+- {
 
 - Seguindo a mesma lógica apresentada acima.
 
@@ -102,7 +102,7 @@ __A principio, você pode ignorá-los.__
 
       teste_imagens = T.reshape((t_samples, -1))
 
-}
+- }
 
 - Criando os modelos de treino e de teste.
 
@@ -122,13 +122,13 @@ __A principio, você pode ignorá-los.__
 
       X_test = sc_X2.fit_transform(X_test)
 
-{
+- {
 
       sc_T = StandardScaler()
 
       testes_images = sc_T.fit_transform(testes_image)
 
-}
+- }
 
 - Classificador SVM.
 
@@ -142,11 +142,11 @@ __A principio, você pode ignorá-los.__
 
       Y_pred = classifier.predict(X_test)
 
-{
+- {
 
       Y_pred2 = classifier.predict(testes_images)
 
-}
+- }
 
 - Confusion Matrix.
 
