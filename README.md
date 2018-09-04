@@ -6,6 +6,8 @@ __O Código que estiver entre "{}" chaves, é o código a se usar para testar co
 
 __A principio, você pode ignorá-los.__
 
+- Importando as bibliotecas necessárias.
+
 import numpy as np
 
 import cv2
@@ -30,35 +32,35 @@ for h in range(1,176):
 
 if (h <= 25):
 
-   Y.append(0)
+    Y.append(0)
 
 elif (h > 25 and h <= 50):
 
-   Y.append(1)
+    Y.append(1)
 
 elif h > 50 and h <= 75:
 
-   Y.append(2)
+    Y.append(2)
 
 elif h > 75 and h <= 100:
 
-   Y.append(3)
+    Y.append(3)
 
 elif h > 100 and h <= 125:
 
-Y.append(4)
+    Y.append(4)
 
 elif h > 125 and h <= 150:
 
-   Y.append(5)
+    Y.append(5)
 
 elif h > 150 and h <= 175:
 
-   Y.append(6)
+    Y.append(6)
 
 - Tranformando a lista em array.
 
-   Y = np.array(Y)
+Y = np.array(Y)
 
 - Criando uma lista para guardar as imagens.
 
@@ -68,7 +70,7 @@ imagens = []
 
 for i in range(1,176):
 
-   imagens.append(cv2.imread('data ('+str(i)+').jpg'))
+    imagens.append(cv2.imread('data ('+str(i)+').jpg'))
 
 - Tranformando a lista em array.
 
