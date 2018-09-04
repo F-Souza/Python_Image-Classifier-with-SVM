@@ -19,7 +19,7 @@ __A principio, você pode ignorá-los.__
       Y = []
 
 - A lista será preenchidas com valores de 0 a 1 que indicarão o que represetam. 
-- A quantidade de itens que você quer usar no seu classificador é você quem define, nesse por ser um pequeno
+- A quantidade de itens a se usar no seu classificador é você quem define, nesse por ser um pequeno
  exemplo só usarei 2; Maçãs e Bananas.
 - 0 == Maçã
 - 1 == Banana
