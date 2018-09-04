@@ -26,7 +26,7 @@ __A principio, você pode ignorá-los.__
 - 4 == If
 - 5 == Loop
 - 6 == Back
-- No caso de exemplo serão usadas 175 imagens.
+- No caso do exemplo serão usadas 175 imagens.
 
       for h in range(1,176):
 
