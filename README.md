@@ -126,7 +126,7 @@ __A principio, você pode ignorá-los.__
 
       sc_T = StandardScaler()
 
-      testes_images = sc_T.fit_transform(testes_image)
+      testes_images = sc_T.fit_transform(teste_imagens)
 
 - }
 
@@ -144,7 +144,7 @@ __A principio, você pode ignorá-los.__
 
 - {
 
-      Y_pred2 = classifier.predict(testes_images)
+      Y_pred2 = classifier.predict(teste_imagens)
 
 - }
 
