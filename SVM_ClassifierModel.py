@@ -21,8 +21,8 @@ data_images = X.reshape((n_samples, -1))
 
 """
 imgs = []
-for j in range(0,Quantidade de Imagens a serem analisadas):
-    imgs.append(cv2.imread('teste_'+str(j)+'.jpg'))
+for j in range(0,3):
+    imgs.append(cv2.imread('teste_'+str(j)+'.png'))
 T = np.array(imgs)
 t_samples = len(T)
 teste_imagens = T.reshape((t_samples, -1))
@@ -49,6 +49,13 @@ Y_pred = classifier.predict(X_test)
 """
 Y_pred2 = classifier.predict(teste_imagens)
 """
+
+# Percebe que, Y_pred2 te retornar os valores (0,0,1)
+# Ou seja, as imagens carregadas, teste_0, teste_1 e teste_2 correspondem a:
+# teste_0 == 0 | Maca
+# teste_1 == 0 | Maca
+# teste_2 == 1 | Banana
+
 
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(Y_test, Y_pred)
