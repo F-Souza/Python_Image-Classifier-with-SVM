@@ -124,6 +124,22 @@ __A principio, você pode ignorá-los.__
 
       Y_pred2 = classifier.predict(teste_imagens)
 
+      # Perceba que, Y_pred2 te retornar os valores (0,0,1,0,1,1)
+      
+      # Ou seja, as imagens carregadas, teste_0, teste_1 e teste_2 [...] correspondem a:
+      
+      # teste_0 == 0 | Maca
+      
+      # teste_1 == 0 | Maca
+      
+      # teste_2 == 1 | Banana
+      
+      # teste_1 == 0 | Maca
+      
+      # teste_2 == 1 | Banana
+      
+      # teste_2 == 1 | Banana      
+
 - }
 
 - Confusion Matrix.
