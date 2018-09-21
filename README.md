@@ -1,4 +1,4 @@
-# Image-Classifier-with-SVM
+# Python_Image-Classifier-with-SVM
 
 __IMPORTANTE__
 
