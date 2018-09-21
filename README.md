@@ -63,25 +63,6 @@ __A principio, você pode ignorá-los.__
 
       data_images = X.reshape((n_samples, -1))
 
-- {
-
-- Seguindo a mesma lógica apresentada acima.
-
-      imgs = []
-
-
-      for j in range(0, quantidade de imagens a serem analasidas):
-
-        imgs.append(cv2.imread('teste_'+str(j)+'.jpg'))
-
-      T = np.array(imgs)
-
-      t_samples = len(T)
-
-      teste_imagens = T.reshape((t_samples, -1))
-
-- }
-
 - Criando os modelos de treino e de teste.
 
       from sklearn.model_selection import train_test_split
@@ -100,14 +81,6 @@ __A principio, você pode ignorá-los.__
 
       X_test = sc_X2.fit_transform(X_test)
 
-- {
-
-      sc_T = StandardScaler()
-
-      testes_images = sc_T.fit_transform(teste_imagens)
-
-- }
-
 - Classificador SVM.
 
       classifier = SVC(kernel = 'rbf', random_state = 0)
@@ -120,7 +93,40 @@ __A principio, você pode ignorá-los.__
 
       Y_pred = classifier.predict(X_test)
 
-- {
+- Confusion Matrix.
+
+      from sklearn.metrics import confusion_matrix
+
+      cm = confusion_matrix(Y_test, Y_pred)
+
+
+- Como testar com imagens diferentes das usadas no treino.
+
+{
+
+- Seguindo a mesma lógica apresentada acima.
+
+- Carrego as imagens que eu quero testar.
+
+      imgs = []
+
+      for j in range(0, quantidade de imagens a serem analasidas):
+
+        imgs.append(cv2.imread('teste_'+str(j)+'.jpg'))
+
+      T = np.array(imgs)
+
+      t_samples = len(T)
+
+      teste_imagens = T.reshape((t_samples, -1))
+
+- Escalono os valores.
+
+      sc_T = StandardScaler()
+
+      testes_images = sc_T.fit_transform(teste_imagens)
+
+- E faço o Predict/Classifico.
 
       Y_pred2 = classifier.predict(teste_imagens)
 
@@ -134,13 +140,4 @@ __A principio, você pode ignorá-los.__
       
       # teste_2 == 1 | Banana 
 
-- }
-
-- Confusion Matrix.
-
-      from sklearn.metrics import confusion_matrix
-
-      cm = confusion_matrix(Y_test, Y_pred)
-
-
-
+}
